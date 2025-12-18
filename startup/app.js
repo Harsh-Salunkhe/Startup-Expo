@@ -59,7 +59,7 @@ const   MainCountdownBox = document.getElementById("countdown")
         MinutesBox = document.getElementById("count-mins"),
         SecsBox = document.getElementById("count-secs");
 
-const EventDate = new Date("2025-02-14T09:00:00")
+const EventDate = new Date("2026-02-14T09:00:00")
 
 let currentDate = Date.now()
 
