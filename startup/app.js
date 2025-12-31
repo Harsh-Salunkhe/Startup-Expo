@@ -1,5 +1,59 @@
 //Programming fpr navBar disappear on scroll down
 
+// ========================================
+// F1 LOADING SCREEN LOGIC
+// ========================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const loadingScreen = document.getElementById('f1-loading-screen');
+    const lights = document.querySelectorAll('.f1-light');
+    
+    // Function to light up each red light sequentially
+    function lightUpRed() {
+        let delay = 0;
+        lights.forEach((light, index) => {
+            setTimeout(() => {
+                light.classList.add('red');
+            }, delay);
+            delay += 400; // 400ms between each light
+        });
+        
+        // After all lights are red, turn them all green
+        setTimeout(() => {
+            lights.forEach(light => {
+                light.classList.remove('red');
+                light.classList.add('green');
+            });
+            
+            // Hide loading screen after green lights
+            setTimeout(() => {
+                loadingScreen.classList.add('loaded');
+                document.body.style.overflow = ''; // Re-enable scrolling
+            }, 800);
+        }, delay + 600); // Wait for all reds + extra pause
+    }
+    
+    // Prevent scrolling during loading
+    document.body.style.overflow = 'hidden';
+    
+    // Check if page is fully loaded
+    if (document.readyState === 'complete') {
+        // If already loaded, start immediately
+        setTimeout(lightUpRed, 500);
+    } else {
+        // Otherwise wait for load event
+        window.addEventListener('load', function() {
+            setTimeout(lightUpRed, 500);
+        });
+    }
+    
+    // Fallback: Force hide after 5 seconds regardless
+    setTimeout(() => {
+        loadingScreen.classList.add('loaded');
+        document.body.style.overflow = '';
+    }, 5000);
+});
+
 let lastPosn = 0;
 console.log("app");
 const NavEffect = (evt) => {
