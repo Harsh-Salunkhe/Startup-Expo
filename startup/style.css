@@ -3157,3 +3157,35 @@ body {
   box-shadow: 0 0 20px rgba(139, 92, 246, 0.7);
   margin: 0 auto 1rem;
 }
+.site-footer {
+  width: 100%;
+  padding: 1.8rem 1rem;
+  background: #08000f;
+  border-top: 1px solid rgba(139, 92, 246, 0.35);
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-email {
+  color: #c4b5fd;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.footer-address {
+  color: #a78bfa;
+  font-size: 0.9rem;
+}
+
+.footer-copy {
+  color: #9f9fbd;
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
