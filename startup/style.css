@@ -3189,3 +3189,343 @@ body {
   font-size: 0.85rem;
   margin-top: 6px;
 }
+
+/* ========================================= */
+/* MOBILE FIXES - ADD TO BOTTOM OF CSS      */
+/* ========================================= */
+
+/* Hide helmet image */
+#registration-form .helmet {
+    display: none !important;
+}
+
+/* Mobile adjustments - only resize on mobile */
+@media screen and (max-width: 900px) {
+    #intro {
+        background-size: 70% auto;
+        background-position: center bottom;
+    }
+    
+    #registration-form {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #registration-form form {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #intro {
+        background-size: 100% auto;
+    }
+    
+    #intro-heading-l1,
+    #intro-heading-l2 {
+        font-size: 2.2rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    #registration-area {
+        padding: 4rem 1rem;
+    }
+    
+    #reg-head {
+        font-size: 1.8rem;
+    }
+    
+    #registration-form .inp-element {
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #intro {
+        background-size: 120% auto;
+    }
+    
+    #intro-heading-l1,
+    #intro-heading-l2 {
+        font-size: 1.8rem;
+    }
+    
+    #registration-form .inp-element {
+        height: 3.8rem;
+        padding: 0 0.8rem;
+    }
+    
+    #registration-form .submit-form-btn {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Timer mobile fixes */
+@media screen and (max-width: 900px) {
+    #countdown {
+        width: 90%;
+        padding: 15px 10px;
+        gap: 0.8rem;
+    }
+    
+    #countdown .count {
+        min-width: 70px;
+        padding: 8px 10px;
+    }
+    
+    #countdown .count p:nth-child(1) {
+        font-size: 2rem;
+    }
+    
+    #countdown .count p:nth-child(2) {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #countdown {
+        width: 95%;
+        padding: 12px 8px;
+        gap: 0.6rem;
+    }
+    
+    #countdown .count {
+        min-width: 60px;
+        padding: 6px 8px;
+    }
+    
+    #countdown .count p:nth-child(1) {
+        font-size: 1.6rem;
+    }
+    
+    #countdown .count p:nth-child(2) {
+        font-size: 0.65rem;
+    }
+    
+    #countdown .seperator {
+        width: 2px;
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #countdown {
+        padding: 10px 6px;
+        gap: 0.5rem;
+    }
+    
+    #countdown .count {
+        min-width: 50px;
+        padding: 5px 6px;
+    }
+    
+    #countdown .count p:nth-child(1) {
+        font-size: 1.4rem;
+    }
+    
+    #countdown .count p:nth-child(2) {
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* Gallery section mobile fixes */
+@media screen and (max-width: 900px) {
+    #event-gallery {
+        padding: 4rem 0;
+        min-height: auto;
+    }
+    
+    .gallery-heading {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .slider-container {
+        width: 100%;
+        min-height: 350px;
+        padding: 0;
+    }
+    
+    .slider-track {
+        padding: 80px 30px;
+        gap: 30px;
+    }
+    
+    .slider-track img {
+        width: 350px;
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #event-gallery {
+        padding: 3rem 0;
+    }
+    
+    .gallery-heading {
+        font-size: 1.8rem;
+    }
+    
+    .slider-container {
+        min-height: 280px;
+    }
+    
+    .slider-track {
+        padding: 60px 20px;
+        gap: 20px;
+    }
+    
+    .slider-track img {
+        width: 280px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-heading {
+        font-size: 1.5rem;
+    }
+    
+    .slider-container {
+        min-height: 240px;
+    }
+    
+    .slider-track {
+        padding: 50px 15px;
+        gap: 15px;
+    }
+    
+    .slider-track img {
+        width: 240px;
+        height: 170px;
+    }
+}
+
+/* Contact section mobile fixes - 2x2 grid layout */
+@media screen and (max-width: 900px) {
+    #contact {
+        padding: 4rem 1.5rem;
+    }
+    
+    .contact-title {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        overflow-x: visible;
+        padding: 0;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .team-card {
+        flex: none;
+        max-width: 100%;
+        width: 100%;
+        padding: 1.5rem 1rem;
+    }
+    
+    .team-card img {
+        width: 85px;
+        height: 85px;
+    }
+    
+    .team-card h3 {
+        font-size: 0.95rem;
+    }
+    
+    .team-card p {
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .contact-icons a {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contact {
+        padding: 3rem 1rem;
+    }
+    
+    .contact-title {
+        font-size: 1.8rem;
+    }
+    
+    .contact-grid {
+        gap: 1.2rem;
+        max-width: 500px;
+    }
+    
+    .team-card {
+        padding: 1.3rem 0.9rem;
+    }
+    
+    .team-card img {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .team-card h3 {
+        font-size: 0.9rem;
+    }
+    
+    .team-card p {
+        font-size: 0.75rem;
+    }
+    
+    .contact-icons a {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-grid {
+        gap: 1rem;
+        max-width: 100%;
+    }
+    
+    .team-card {
+        padding: 1.2rem 0.8rem;
+    }
+    
+    .team-card img {
+        width: 70px;
+        height: 70px;
+        border: 2px solid #a78bfa;
+    }
+    
+    .team-card h3 {
+        font-size: 0.85rem;
+    }
+    
+    .team-card p {
+        font-size: 0.7rem;
+    }
+    
+    .contact-icons {
+        gap: 10px;
+    }
+    
+    .contact-icons a {
+        width: 28px;
+        height: 28px;
+        font-size: 0.75rem;
+    }
+}
