@@ -3850,3 +3850,75 @@ body {
         padding-top: 110px !important;
     }
 }
+/* ========================================= */
+/* SMOOTH LOOPING GALLERY FIX               */
+/* ========================================= */
+
+/* Duplicate images for seamless loop */
+.slider-track {
+    display: flex;
+    gap: 50px;
+    padding: 120px 60px;
+    animation: race-scroll-seamless 40s linear infinite;
+    position: relative;
+    z-index: 3;
+    width: max-content;
+}
+
+/* Seamless scroll animation */
+@keyframes race-scroll-seamless {
+    0% { 
+        transform: translateX(0); 
+    }
+    100% { 
+        transform: translateX(calc(-50% - 25px)); 
+    }
+}
+
+/* Pause on hover */
+.slider-container:hover .slider-track {
+    animation-play-state: paused;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 900px) {
+    .slider-track {
+        padding: 80px 30px;
+        gap: 30px;
+        animation: race-scroll-seamless 30s linear infinite;
+    }
+    
+    @keyframes race-scroll-seamless {
+        0% { 
+            transform: translateX(0); 
+        }
+        100% { 
+            transform: translateX(calc(-50% - 15px)); 
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .slider-track {
+        padding: 60px 20px;
+        gap: 20px;
+        animation: race-scroll-seamless 25s linear infinite;
+    }
+    
+    @keyframes race-scroll-seamless {
+        0% { 
+            transform: translateX(0); 
+        }
+        100% { 
+            transform: translateX(calc(-50% - 10px)); 
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slider-track {
+        padding: 50px 15px;
+        gap: 15px;
+        animation: race-scroll-seamless 20s linear infinite;
+    }
+}

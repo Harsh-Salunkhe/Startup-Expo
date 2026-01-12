@@ -418,45 +418,36 @@
             
             >
 
-                <div  id="register-now" >
-                    <div class="inp-element">
-                       
-                        <input placeholder="Startup Name" type="text" name="name">
-                    </div>
-                    
-                    <div class="inp-element">
-                       
-                        <input placeholder="Linkedin Profile" type="text" name="linkedin">
-                    </div>
-                    
-                    <div class="inp-element">
-                        
-                        <input placeholder="Name of CEO" type="text" name="founder">
-                    </div>
-                    
-                    <div class="inp-element">
-                        
-                        <input placeholder="E-mail" type="text" name="email">
-                    </div>
-                    
-                    <div class="inp-element">
-                       
-                        <input placeholder="Contact" type="text" name="contact">
-                    </div>
-                   
-                    <div class="inp-element">
-                       
-                        <input placeholder="Website" type="text" name="website">
-                    </div>
-                    
-                    <div class="inp-element">
-                        
-                        <input placeholder="Yearly revenue in INR" type="text" name="revenue">
-                    </div>
-    
+                 <div id="register-now">
+        <div class="inp-element">
+            <input placeholder="Startup Name" type="text" name="name" required>
+        </div>
         
-                </div>
-                <button id="submit-expo" type="submit" class="submit-form-btn">Submit</button>
+        <div class="inp-element">
+            <input placeholder="Linkedin Profile (e.g., https://linkedin.com/in/yourprofile)" type="url" name="linkedin" required>
+        </div>
+        
+        <div class="inp-element">
+            <input placeholder="Name of CEO" type="text" name="founder" required>
+        </div>
+        
+        <div class="inp-element">
+            <input placeholder="E-mail" type="email" name="email" required>
+        </div>
+        
+        <div class="inp-element">
+            <input placeholder="Contact (10 digits)" type="tel" name="contact" pattern="[0-9]{10}" required>
+        </div>
+       
+        <div class="inp-element">
+            <input placeholder="Website (Optional)" type="url" name="website">
+        </div>
+        
+        <div class="inp-element">
+            <input placeholder="Yearly revenue in INR" type="number" name="revenue" min="0" step="1" required>
+        </div>
+    </div>
+    <button id="submit-expo" type="submit" class="submit-form-btn">Submit</button>
 
             </form>
            
@@ -1325,7 +1316,7 @@
       Maulana Azad National Institute of Technology, Bhopal
     </p>
     <p class="footer-copy">
-      © 2025 E-Cell MANIT | All Rights Reserved.
+      © 2026 E-Cell MANIT | All Rights Reserved.
     </p>
   </div>
 </footer>
