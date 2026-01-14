@@ -3645,6 +3645,12 @@ body {
     }
 }
 
+@media screen and (min-width: 601px) and (max-width: 900px) {
+     #registration-form .helmet {
+        display: block !important;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #intro {
         background-size: 100% auto;
@@ -3875,10 +3881,8 @@ body {
     }
 }
 
-/* Pause on hover */
-.slider-container:hover .slider-track {
-    animation-play-state: paused;
-}
+
+
 
 /* Mobile adjustments */
 @media screen and (max-width: 900px) {
@@ -3921,4 +3925,75 @@ body {
         gap: 15px;
         animation: race-scroll-seamless 20s linear infinite;
     }
+}
+
+#registration-form form{
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+/* ========================================= */
+/* REGISTRATION FORM - MOBILE GAP FIXES     */
+/* ========================================= */
+
+/* Desktop - keep original spacing */
+#register-now {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    width: 100%;
+}
+
+/* ========================================= */
+/* REGISTRATION - HELMET IMAGE POSITIONING  */
+/* ========================================= */
+
+@media screen and (min-width: 901px) {
+    #registration-form .helmet {
+        margin-right: 300px; /* Push helmet away from form */
+    }
+}
+/* Tablet */
+/* ========================================= */
+/* TABLET - HELMET IMAGE ADJUSTMENTS        */
+/* ========================================= */
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    #registration-form .helmet {
+        display: block !important; /* Show helmet on tablet */
+        max-width: 100% !important; /* Full width available */
+        width: 90% !important; /* Take 90% of container width */
+        margin: 0 auto; /* Center it */
+    }
+    
+    #registration-form {
+        gap: 2rem; /* Add space between helmet and form */
+    }
+    
+    #registration-form form {
+        width: 90%; /* Form takes 90% width */
+        max-width: 100%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    #register-now {
+        gap: 1rem;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    #register-now {
+        gap: 0.8rem;
+    }
+    
 }
