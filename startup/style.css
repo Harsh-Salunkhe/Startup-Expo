@@ -3993,3 +3993,587 @@ body {
     }
     
 }
+
+/* ========================================= */
+/* TABLET VIEW RESPONSIVE FIXES             */
+/* Add these styles to the END of your CSS  */
+/* ========================================= */
+
+/* Tablet breakpoint: 601px to 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    
+    /* ===== HERO SECTION ===== */
+    #intro {
+        background-size: 90% auto;
+        background-position: center bottom;
+        padding-top: 110px;
+        min-height: 90vh;
+    }
+    
+    #intro-contents {
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+    
+    #intro-heading-l1,
+    #intro-heading-l2 {
+        font-size: 3.5rem;
+        letter-spacing: 0.3rem;
+    }
+    
+    /* Timer adjustments */
+    #countdown {
+        width: 85%;
+        padding: 18px 12px;
+        gap: 0.9rem;
+    }
+    
+    #countdown .count {
+        min-width: 75px;
+        padding: 10px;
+    }
+    
+    #countdown .count p:nth-child(1) {
+        font-size: 2.3rem;
+    }
+    
+    #countdown .count p:nth-child(2) {
+        font-size: 0.8rem;
+    }
+    
+    #countdown .seperator {
+        height: 50px;
+        width: 2.5px;
+    }
+    
+    /* ===== REGISTRATION SECTION ===== */
+    /* HIDE helmet image on tablet */
+    #registration-form .helmet {
+        display: none !important;
+    }
+    
+    #registration-area {
+        padding: 5rem 2rem;
+    }
+    
+    #registration-form {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    #registration-form form {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    #registration-form .inp-element {
+        height: 4.5rem;
+        max-width: 100%;
+    }
+    
+    #registration-form .inp-element input {
+        font-size: 1.1rem;
+    }
+    
+    #registration-form .submit-form-btn {
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+    }
+    
+    /* ===== LAST EXPO DETAILS SECTION ===== */
+    #last-expo-details {
+        flex-direction: column;
+        padding: 4rem 2.5rem;
+        gap: 3rem;
+        align-items: center;
+    }
+    
+    #last-expo-details #details-left {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #last-expo-details #details-left .previous-stats {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    #last-expo-details #details-left .previous-stats .stat-value {
+        flex: 1;
+    }
+    
+    #last-expo-details #details-left .previous-stats .stat-value h1 {
+        font-size: 2.5rem;
+    }
+    
+    #last-expo-details #details-left .previous-stats .stat-value p {
+        font-size: 1.2rem;
+    }
+    
+    #last-expo-details #details-right {
+        max-width: 100%;
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.7rem;
+        text-align: justify;
+    }
+    
+    /* ===== ABOUT SECTION ===== */
+    #about {
+        padding: 4rem 2.5rem;
+    }
+    
+    #about #aboutus-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    #about #aboutimg {
+        max-width: 500px;
+    }
+    
+    /* ===== WHY ATTEND CARDS ===== */
+    #why-attend {
+        padding: 4rem 2rem;
+    }
+    
+    #why-attend-grid {
+        gap: 2rem;
+    }
+    
+    .why-attend-card {
+        width: 45%;
+        min-width: 320px;
+        height: auto;
+        min-height: 360px;
+    }
+    
+    /* ===== GALLERY ===== */
+    #event-gallery {
+        padding: 4rem 0;
+    }
+    
+    .slider-container {
+        min-height: 400px;
+    }
+    
+    .slider-track {
+        padding: 90px 40px;
+        gap: 35px;
+    }
+    
+    .slider-track img {
+        width: 400px;
+        height: 280px;
+    }
+    
+    /* ===== CONTACT SECTION ===== */
+    #contact {
+        padding: 4rem 2rem;
+    }
+    
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 600px;
+    }
+    
+    .team-card {
+        max-width: 100%;
+    }
+    
+    /* ===== NAVIGATION ===== */
+    nav {
+        padding: 10px 25px;
+    }
+    
+    #nav-links-desktop {
+        gap: 20px;
+    }
+    
+    #nav-links-desktop a {
+        font-size: 0.85rem;
+    }
+    
+    /* ===== GENERAL HEADINGS ===== */
+    .sec-heading,
+    #Registration-heading,
+    #Screening-heading,
+    #reg-head {
+        font-size: 2.5rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    /* ===== WHO CAN PARTICIPATE ===== */
+    section#who-can-participate {
+        padding: 3.5rem 2.5rem;
+        gap: 2.5rem;
+    }
+    
+    section#who-can-participate h1 {
+        max-width: 100%;
+    }
+    
+    section#who-can-participate ul > li {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* ===== REGISTRATION & SCREENING ===== */
+    #reg-and-screening {
+        padding: 4rem 2rem;
+    }
+    
+    #reg-and-screening #reg-pro {
+        padding: 3rem 2.5rem;
+        font-size: 0.95rem;
+        line-height: 1.8rem;
+    }
+    
+    #reg-and-screening #screening-boxes {
+        gap: 2rem;
+    }
+    
+    #reg-and-screening #screening-boxes .screening-card {
+        max-width: 400px;
+        min-height: 400px;
+        padding: 2.5rem 2rem 2rem;
+    }
+    
+    /* ===== SPONSORS ===== */
+    #sponsors {
+        padding: 4rem 2.5rem;
+    }
+    
+    .sponsor-image-wrapper {
+        width: 9rem;
+        height: 6.5rem;
+    }
+}
+
+/* ========================================= */
+/* FINE-TUNE FOR LARGER TABLETS (768px-900px) */
+/* ========================================= */
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    #intro {
+        background-size: 70% auto;
+    }
+    
+    #intro-heading-l1,
+    #intro-heading-l2 {
+        font-size: 3.8rem;
+    }
+    
+    .why-attend-card {
+        width: 48%;
+    }
+    
+    #last-expo-details #details-left .previous-stats {
+        max-width: 550px;
+    }
+}
+
+/* ========================================= */
+/* SMALLER TABLETS (601px-767px)            */
+/* ========================================= */
+@media screen and (min-width: 601px) and (max-width: 767px) {
+    #intro {
+        background-size: 80% auto;
+    }
+    
+    #intro-heading-l1,
+    #intro-heading-l2 {
+        font-size: 3.2rem;
+    }
+    
+    .why-attend-card {
+        width: 100%;
+        max-width: 450px;
+    }
+    
+    #countdown {
+        width: 90%;
+    }
+}
+
+/* ========================================= */
+/* HERO SECTION - TABLET RESPONSIVE FIX     */
+/* Add this to the END of your CSS          */
+/* ========================================= */
+
+/* Tablet breakpoint: 601px to 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    
+    /* Hero container - Full screen with responsive background */
+    #intro {
+        height: 100vh;
+        min-height: 100vh;
+        background-size: 100% 100%; /* Stretches to fit entire screen */
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Content wrapper */
+    #intro-contents {
+        gap: 2rem;
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        max-width: 90%;
+        z-index: 2;
+    }
+    
+    /* Hero heading container */
+    #hero-heading {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    /* RESIZE STARTUP EXPO HEADER */
+    #intro-heading-l1 {
+        font-size: 2.8rem !important;
+        letter-spacing: 0.3rem !important;
+        line-height: 1.1;
+        text-align: center;
+    }
+    
+    #intro-heading-l2 {
+        font-size: 3rem !important;
+        letter-spacing: 0.3rem !important;
+        line-height: 1.1;
+        text-align: center;
+    }
+    
+    /* RESIZE COUNTDOWN TIMER - Make it smaller */
+    #countdown {
+        width: 85% !important;
+        max-width: 450px !important;
+        height: auto !important;
+        padding: 12px 10px !important;
+        gap: 0.6rem !important;
+        transform: scale(1) !important;
+    }
+    
+    /* Individual count boxes - smaller */
+    #countdown .count {
+        min-width: 65px !important;
+        padding: 8px 6px !important;
+    }
+    
+    /* Number styling - smaller */
+    #countdown .count p:nth-child(1) {
+        font-size: 1.8rem !important;
+        line-height: 1 !important;
+        margin-bottom: 3px !important;
+    }
+    
+    /* Label styling - smaller */
+    #countdown .count p:nth-child(2) {
+        font-size: 0.7rem !important;
+        letter-spacing: 1px !important;
+    }
+    
+    /* Separator lines - smaller */
+    #countdown .seperator {
+        width: 2px !important;
+        height: 40px !important;
+    }
+    
+    /* Animated scan line adjustment */
+    #countdown::after {
+        height: 2px !important;
+    }
+}
+
+/* ========================================= */
+/* FINE-TUNE: Larger Tablets (768-900px)    */
+/* ========================================= */
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    
+    #intro {
+        background-size: 100% 100%;
+    }
+    
+    /* Slightly larger header for bigger tablets */
+    #intro-heading-l1 {
+        font-size: 3.2rem !important;
+        letter-spacing: 0.4rem !important;
+    }
+    
+    #intro-heading-l2 {
+        font-size: 3.5rem !important;
+        letter-spacing: 0.4rem !important;
+    }
+    
+    /* Slightly larger timer */
+    #countdown {
+        max-width: 480px !important;
+        padding: 14px 12px !important;
+        gap: 0.7rem !important;
+    }
+    
+    #countdown .count {
+        min-width: 70px !important;
+        padding: 9px 7px !important;
+    }
+    
+    #countdown .count p:nth-child(1) {
+        font-size: 2rem !important;
+    }
+    
+    #countdown .count p:nth-child(2) {
+        font-size: 0.75rem !important;
+    }
+    
+    #countdown .seperator {
+        height: 45px !important;
+    }
+}
+
+/* ========================================= */
+/* FINE-TUNE: Smaller Tablets (601-767px)   */
+/* ========================================= */
+@media screen and (min-width: 601px) and (max-width: 767px) {
+    
+    #intro {
+        background-size: 100% 100%;
+    }
+    
+    #intro-contents {
+        padding: 0 1.5rem;
+        gap: 1.8rem;
+    }
+    
+    /* Smaller header for smaller tablets */
+    #intro-heading-l1 {
+        font-size: 2.5rem !important;
+        letter-spacing: 0.25rem !important;
+    }
+    
+    #intro-heading-l2 {
+        font-size: 2.7rem !important;
+        letter-spacing: 0.25rem !important;
+    }
+    
+    /* Smaller timer */
+    #countdown {
+        max-width: 420px !important;
+        padding: 10px 8px !important;
+        gap: 0.5rem !important;
+    }
+    
+    #countdown .count {
+        min-width: 60px !important;
+        padding: 7px 5px !important;
+    }
+    
+    #countdown .count p:nth-child(1) {
+        font-size: 1.6rem !important;
+    }
+    
+    #countdown .count p:nth-child(2) {
+        font-size: 0.65rem !important;
+    }
+    
+    #countdown .seperator {
+        height: 35px !important;
+    }
+}
+
+/* ========================================= */
+/* PORTRAIT TABLET - Full screen stretch    */
+/* ========================================= */
+@media screen and (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
+    
+    #intro {
+        background-size: 100% 100%;
+    }
+    
+    #intro-contents {
+        margin-bottom: 3rem;
+    }
+}
+
+/* ========================================= */
+/* LANDSCAPE TABLET - Full screen stretch   */
+/* ========================================= */
+@media screen and (min-width: 601px) and (max-width: 900px) and (orientation: landscape) {
+    
+    #intro {
+        background-size: 100% 100%;
+        min-height: 100vh;
+    }
+    
+    #intro-contents {
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* ========================================= */
+/* REGISTER NOW BUTTON STYLING - ALL DEVICES */
+/* ========================================= */
+
+/* Style "Register Now" link in navigation as a button */
+#nav-links-desktop a[href="#sponsors"],
+#nav-links-mobile a[href="#sponsors"] {
+    background: #8b5cf6 !important;
+    color: #ffffff !important;
+    padding: 10px 24px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3) !important;
+    transition: all 0.2s ease !important;
+    border: none !important;
+}
+
+#nav-links-desktop a[href="#sponsors"]::after,
+#nav-links-mobile a[href="#sponsors"]::after {
+    display: none !important; /* Remove underline effect */
+}
+
+#nav-links-desktop a[href="#sponsors"]:hover,
+#nav-links-mobile a[href="#sponsors"]:hover {
+    background: #7c3aed !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4) !important;
+    text-shadow: none !important;
+}
+
+#nav-links-desktop a[href="#sponsors"]:active,
+#nav-links-mobile a[href="#sponsors"]:active {
+    transform: translateY(0) !important;
+    box-shadow: 0 1px 4px rgba(139, 92, 246, 0.3) !important;
+}
+
+/* Mobile menu button styling */
+#nav-links-mobile a[href="#sponsors"] {
+    padding: 12px 28px !important;
+    font-size: 1.1rem !important;
+    display: inline-block !important;
+    margin: 5px 0 !important;
+}
+
+/* Tablet adjustments for button */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    #nav-links-desktop a[href="#sponsors"] {
+        padding: 8px 20px !important;
+        font-size: 0.85rem !important;
+        letter-spacing: 0.8px !important;
+    }
+}
