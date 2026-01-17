@@ -4528,8 +4528,8 @@ body {
 /* ========================================= */
 
 /* Style "Register Now" link in navigation as a button */
-#nav-links-desktop a[href="#sponsors"],
-#nav-links-mobile a[href="#sponsors"] {
+#nav-links-desktop a[href="#registration-area"],
+#nav-links-mobile a[href="#registration-area"] {
     background: #8b5cf6 !important;
     color: #ffffff !important;
     padding: 10px 24px !important;
@@ -4542,27 +4542,27 @@ body {
     border: none !important;
 }
 
-#nav-links-desktop a[href="#sponsors"]::after,
-#nav-links-mobile a[href="#sponsors"]::after {
+#nav-links-desktop a[href="#registration-area"]::after,
+#nav-links-mobile a[href="#registration-area"]::after {
     display: none !important; /* Remove underline effect */
 }
 
-#nav-links-desktop a[href="#sponsors"]:hover,
-#nav-links-mobile a[href="#sponsors"]:hover {
+#nav-links-desktop a[href="#registration-area"]:hover,
+#nav-links-mobile a[href="#registration-area"]:hover {
     background: #7c3aed !important;
     transform: translateY(-1px) !important;
     box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4) !important;
     text-shadow: none !important;
 }
 
-#nav-links-desktop a[href="#sponsors"]:active,
-#nav-links-mobile a[href="#sponsors"]:active {
+#nav-links-desktop a[href="#registration-area"]:active,
+#nav-links-mobile a[href="#registration-area"]:active {
     transform: translateY(0) !important;
     box-shadow: 0 1px 4px rgba(139, 92, 246, 0.3) !important;
 }
 
 /* Mobile menu button styling */
-#nav-links-mobile a[href="#sponsors"] {
+#nav-links-mobile a[href="#registration-area"] {
     padding: 12px 28px !important;
     font-size: 1.1rem !important;
     display: inline-block !important;
@@ -4571,7 +4571,7 @@ body {
 
 /* Tablet adjustments for button */
 @media screen and (min-width: 601px) and (max-width: 900px) {
-    #nav-links-desktop a[href="#sponsors"] {
+    #nav-links-desktop a[href="registration-area"] {
         padding: 8px 20px !important;
         font-size: 0.85rem !important;
         letter-spacing: 0.8px !important;
